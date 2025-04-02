@@ -9,3 +9,5 @@ To do:
 ~~2) Add a script (ssh2.py) for using a bastion host.~~
 
 3) Add a function to ensure data can only be read.  There will be no writing to the server(s).
+
+4) Instead of using an array built into the script, use "with open" to populate a target hosts file.
