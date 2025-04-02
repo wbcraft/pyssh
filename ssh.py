@@ -38,10 +38,10 @@ def ssh_connect(hostname, username, port=22):
 #### ADD YOUR HOSTNAME AND USERNAME HERE ####
 
 if __name__ =="__main__":
+    username = "YOURUSERNAME"
     hostname = "YOURHOSTNAME" 
     #### OR ####
     #hostname= ["hostname1", "hostname2", "hostname3",]
-    username = "YOURUSERNAME"
-    #for hostname in hostnames:
+        #for hostname in hostnames:
     #if using this array, indent the next line...
     ssh_connect(hostname,username)
