@@ -29,7 +29,7 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
         "uptime",
         "date",
         "pwd",
-        "python/disk_check.sh"
+        #"python/disk_check.sh"
     ]
 
     for command in commands:
