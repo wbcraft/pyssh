@@ -48,7 +48,7 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
 
 if __name__ == "__main__":
     hostnames = ["edited", "edited", "edited", "edited"]
-    username = "blane"
+    username = "edited"
     bastion_host = "bastion.example.com"  # Replace with your bastion host
     bastion_username = "bastion_user"     # Replace with your bastion user
     bastion_port = 22                       # Replace with your bastion port
