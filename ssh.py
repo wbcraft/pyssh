@@ -17,6 +17,7 @@ def ssh_connect(hostname, username, port=22):
 #        "zpool status|grep errors",
 #        "uptime",
 #        "date",
+#        "ntpq -pn | grep '*'",
 #        "pwd",
 #        "python/disk_check.sh"   # This command checks for a script on the hostname you're connecting TO and runs it.
     ]
