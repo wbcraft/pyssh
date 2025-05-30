@@ -39,9 +39,12 @@ def ssh_connect(hostname, username, port=22):
 
 if __name__ =="__main__":
     username = "YOURUSERNAME"
-    hostname = "YOURHOSTNAME" 
+    hostfile_path = "/path/to/your/hosts.txt"
     #### OR ####
     #hostname= ["hostname1", "hostname2", "hostname3",]
         #for hostname in hostnames:
-    #if using this array, indent the next line...
-    ssh_connect(hostname,username)
+    #if using this array, indent the ssh_connect line...
+    with open(hostfile_path, 'r') as file:
+        for line in file:
+            hostname = line.strip()
+            ssh_connect(hostname,username)
