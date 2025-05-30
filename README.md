@@ -4,8 +4,7 @@ Easy enough.  Read the script, fill in what's needed, and run it.
 
 Both of these scripts work for me on a RPi5 host in a python venv. -Apr 1 2025 (not a joke)-
 
-Also tested on Debian 11 and it seems to work fine.
-\
+Also tested on Debian 11 and it seems to work fine.  
 
 
 
@@ -17,8 +16,7 @@ Also tested on Debian 11 and it seems to work fine.
 
 3) Add a function to ensure data can only be read.  There will be no writing to the server(s).
 
-~~4) Instead of using an array built into the script, use "with open" to populate a target hosts file.~~
-\
+~~4) Instead of using an array built into the script, use "with open" to populate a target hosts file.~~  
 
 
 
