@@ -21,6 +21,8 @@ Installation:
 
    b) python -m venv ssh
 
+   c) cd ssh
+
 3) Activate the venv.
 
    a) source bin/activate
