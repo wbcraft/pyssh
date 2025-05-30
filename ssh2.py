@@ -2,7 +2,7 @@
 import paramiko
 
 def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target_hostname, target_username, target_port=22):
-    private_key_path = "/path/to/private/key"
+    private_key_path = "/your/id_rsa"
 
     # Connect to the bastion host
     bastion_client = paramiko.SSHClient()
@@ -47,11 +47,13 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
     bastion_client.close()
 
 if __name__ == "__main__":
-    hostnames = ["edited", "edited", "edited", "edited"]
-    username = "edited"
-    bastion_host = "bastion.example.com"  # Replace with your bastion host
-    bastion_username = "bastion_user"     # Replace with your bastion user
+    hostfile_path = "/your/hosts.txt"
+    username = "username"
+    bastion_host = "bastion_host_name"  # Replace with your bastion host
+    bastion_username = "username_again"     # Replace with your bastion user
     bastion_port = 22                       # Replace with your bastion port
 
-    for hostname in hostnames:
-        ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, hostname, username)
+    with open(hostfile_path, 'r') as hosts:
+        for line in hosts:
+            hostname = line.strip()
+            ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, hostname, username)
