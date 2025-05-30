@@ -44,7 +44,7 @@ if __name__ =="__main__":
     #hostname= ["hostname1", "hostname2", "hostname3",]
         #for hostname in hostnames:
     #if using this array, indent the ssh_connect line...
-    with open(hostfile_path, 'r') as file:
-        for line in file:
+    with open(hostfile_path, 'r') as hosts:
+        for line in hosts:
             hostname = line.strip()
             ssh_connect(hostname,username)
