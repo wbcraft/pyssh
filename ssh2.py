@@ -23,12 +23,13 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
     print(f'Connected to {target_hostname} via bastion host')
 
     commands = [
-        "hostname",
-        "df -h",
+        #"hostname",
+        #"df -h",
         #"zpool status|grep errors",
-        "uptime",
-        "date",
-        "pwd",
+        #"uptime",
+        #"date",
+        #"ntpq -pn | grep '*'",
+        #"pwd",
         #"python/disk_check.sh"
     ]
 
