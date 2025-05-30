@@ -1,3 +1,5 @@
+### Description:
+
 Easy enough.  Read the script, fill in what's needed, and run it.
 
 Both of these scripts work for me on a RPi5 host in a python venv. -Apr 1 2025 (not a joke)-
@@ -5,7 +7,7 @@ Both of these scripts work for me on a RPi5 host in a python venv. -Apr 1 2025 (
 Also tested on Debian 11 and it seems to work fine.
 
 
-# To do:
+### To do:
 
 ~~1) Add an array to parse a list of servers to run the commands across the environment.~~  # Added and commented Apr 1 2025 to ssh.py
 
@@ -18,7 +20,7 @@ Also tested on Debian 11 and it seems to work fine.
 
 
 
-# Installation:
+### Installation:
 
 1) Create a python venv.
    
