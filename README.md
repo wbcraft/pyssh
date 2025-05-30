@@ -6,7 +6,7 @@ Both of these scripts work for me on a RPi5 host in a python venv. -Apr 1 2025 (
 
 Also tested on Debian 11 and it seems to work fine.
 \
-\
+
 
 
 ### To do:
@@ -19,7 +19,7 @@ Also tested on Debian 11 and it seems to work fine.
 
 ~~4) Instead of using an array built into the script, use "with open" to populate a target hosts file.~~
 \
-\
+
 
 
 ### Installation:
