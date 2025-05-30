@@ -16,12 +16,21 @@ To do:
 Installation:
 
 1) Create a python venv.
+   
    a) mkdir python && cd python
+
    b) python -m venv ssh
-2) Activate the venv.
+
+3) Activate the venv.
+
    a) source bin/activate
-3) Install paramiko.
+
+4) Install paramiko.
+
    a) pip3 install paramiko
-4) Create and edit the hosts file.
-5) Modify the script for your username, private key location, etc...  Remember the bastion host and bastion host username if you're using the ssh2.py
-6) Send it.
+
+5) Create and edit the hosts file.
+
+6) Modify the script for your username, private key location, etc...  Remember the bastion host and bastion host username if you're using the ssh2.py
+
+7) Send it.
