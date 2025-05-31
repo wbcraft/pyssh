@@ -38,7 +38,7 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
         output = stdout.read().decode()
         error = stderr.read().decode()
         if output:
-            print(f'Command Output:\n{output}')
+            print(f'{command} output:\n{output}')
         if error:
             print(f'Error:\n{error}')
 
