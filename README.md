@@ -26,13 +26,13 @@ Also tested on Debian 11 and it seems to work fine.
    
    a) mkdir python_ssh
 
-   b) python -m venv ~/python_ssh
+   b) python -m venv ~/python_ssh/python
 
    c) cd python_ssh
 
 3) Activate the venv.
 
-   a) source bin/activate
+   a) source python/bin/activate
 
 4) Install paramiko.
 
