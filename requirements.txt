@@ -1,0 +1,7 @@
+numpy>=1.23.0
+paramiko>=2.10.0
+flask>=2.0.0
+matplotlib>=3.5.0
+pandas>=2.0.0
+meson>=1.8.0
+ninja>=1.11.1

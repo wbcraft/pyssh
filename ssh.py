@@ -2,6 +2,7 @@
 
 import paramiko
 def ssh_connect(hostname, username, port=22):
+### change the line below it the path to your key.  It will typically be /home/username/.ssh/id_rsa ###
     private_key_path = "/path/to/your/private/key"
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -20,6 +21,9 @@ def ssh_connect(hostname, username, port=22):
 #        "ntpq -pn | grep '*'",
 #        "pwd",
 #        "python/disk_check.sh"   # This command checks for a script on the hostname you're connecting TO and runs it.
+         "sudo apt-get update",
+         "sudo apt-get upgrade -y",
+         "sudo reboot"
     ]
   
 #### How it parses/prints the commands.
@@ -36,7 +40,7 @@ def ssh_connect(hostname, username, port=22):
     client.close()
     print('connection closed')
 
-#### ADD YOUR HOSTNAME AND USERNAME HERE ####
+#### ADD YOUR HOSTS FILE AND USERNAME HERE ####
 
 if __name__ =="__main__":
     username = "YOURUSERNAME"

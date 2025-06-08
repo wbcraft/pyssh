@@ -1,0 +1,239 @@
+Timestamp,Hostname,Command,Output
+Timestamp,Hostname,Command,Output
+2025-06-08 10:51:16,tython.local,hostname,"tython
+"
+2025-06-08 10:51:16,tython.local,df -h,"Filesystem           Size  Used Avail Use% Mounted on
+udev                  32G     0   32G   0% /dev
+tmpfs                6.3G  3.8M  6.3G   1% /run
+/dev/mapper/vg-root   47G  9.7G   36G  22% /
+tmpfs                 32G   84K   32G   1% /dev/shm
+tmpfs                5.0M     0  5.0M   0% /run/lock
+/dev/mapper/vg-boot  952M  143M  705M  17% /boot
+/dev/mapper/vg-tmp    47G  5.8M   47G   1% /tmp
+/dev/mapper/vg-var    94G   30G   63G  33% /var
+/dev/mapper/vg-home  729G   76G  652G  11% /home
+/dev/nvme0n1p1       952M  5.9M  946M   1% /boot/efi
+teamssd/tgz1         4.3T  778G  3.6T  18% /teamssd/tgz1
+teamssd/media        6.6T  3.1T  3.6T  46% /teamssd/media
+tweak                1.8T   24K  1.8T   1% /tweak
+tweak/dev            1.7T  7.7G  1.7T   1% /tweak/dev
+tmpfs                6.3G   40K  6.3G   1% /run/user/1000
+"
+2025-06-08 10:51:16,tython.local,zpool status|grep errors,"  scan: scrub repaired 0B in 10:03:20 with 0 errors on Sun Jun  8 10:27:21 2025
+errors: No known data errors
+  scan: scrub repaired 0B in 00:00:24 with 0 errors on Sun Jun  8 00:24:34 2025
+errors: No known data errors
+"
+2025-06-08 10:51:16,tython.local,uptime," 10:51:24 up 1 day,  1:04,  0 user,  load average: 0.15, 0.29, 0.73
+"
+2025-06-08 10:51:16,tython.local,date,"Sun Jun  8 10:51:24 AM CDT 2025
+"
+2025-06-08 10:51:16,tython.local,ntpq -pn | grep '*',"*141.11.89.193   173.71.68.71     2 u  878 1024  377  31.5050  -2.4220   0.2893
+"
+2025-06-08 10:51:16,tython.local,pwd,"/home/blane
+"
+2025-06-08 10:51:16,pihole.local,hostname,"pihole
+"
+2025-06-08 10:51:16,pihole.local,df -h,"Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G   15G   14G  52% /
+devtmpfs        1.6G     0  1.6G   0% /dev
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           750M  1.3M  749M   1% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+/dev/mmcblk0p1  255M   51M  205M  20% /boot
+tmpfs           375M   24K  375M   1% /run/user/1000
+"
+2025-06-08 10:51:16,pihole.local,zpool status|grep errors,
+2025-06-08 10:51:16,pihole.local,uptime," 10:51:31 up  7:51,  1 user,  load average: 0.34, 0.15, 0.04
+"
+2025-06-08 10:51:16,pihole.local,date,"Sun 08 Jun 2025 10:51:31 AM CDT
+"
+2025-06-08 10:51:16,pihole.local,ntpq -pn | grep '*',"*193.29.63.226   204.9.54.119     2 u  647 1024  377   26.610   -1.759   1.465
+"
+2025-06-08 10:51:16,pihole.local,pwd,"/home/blane
+"
+2025-06-08 10:51:16,fedora.local,hostname,"fedora
+"
+2025-06-08 10:51:16,fedora.local,df -h,"Filesystem                  Size  Used Avail Use% Mounted on
+/dev/mapper/vg-root          14G  9.7G  4.4G  69% /
+devtmpfs                    4.0M     0  4.0M   0% /dev
+tmpfs                       7.9G  168K  7.9G   1% /dev/shm
+tmpfs                       3.2G  1.4M  3.2G   1% /run
+/dev/sda1                   975M  314M  611M  34% /boot
+/dev/sda2                   2.0G  365M  1.5G  20% /opt
+/dev/mapper/vg-var          9.8G  6.5G  2.9G  70% /var
+/dev/mapper/vg-home          44G  2.1G   40G   5% /home
+/dev/mapper/vg-tmp           22G  184K   21G   1% /tmp
+endor.local:/mnt/user/plex  7.4T  3.0T  4.4T  41% /mnt/share
+tmpfs                       1.6G  132K  1.6G   1% /run/user/1001
+"
+2025-06-08 10:51:16,fedora.local,zpool status|grep errors,
+2025-06-08 10:51:16,fedora.local,uptime," 10:51:38 up 15 days, 37 min,  3 users,  load average: 0.00, 0.00, 0.00
+"
+2025-06-08 10:51:16,fedora.local,date,"Sun Jun  8 10:51:38 AM CDT 2025
+"
+2025-06-08 10:51:16,fedora.local,ntpq -pn | grep '*',"*141.11.228.173  173.71.68.71     2 u  776 1024  377  32.1286   0.0554   1.0138
+"
+2025-06-08 10:51:16,fedora.local,pwd,"/home/blane
+"
+2025-06-08 10:51:16,rpi58g.local,hostname,"rpi58g
+"
+2025-06-08 10:51:16,rpi58g.local,df -h,"Filesystem                  Size  Used Avail Use% Mounted on
+udev                        3.9G     0  3.9G   0% /dev
+tmpfs                       796M  2.0M  794M   1% /run
+/dev/nvme0n1p2              938G   29G  862G   4% /
+tmpfs                       3.9G  276K  3.9G   1% /dev/shm
+tmpfs                       5.0M   12K  5.0M   1% /run/lock
+tmpfs                       4.0M     0  4.0M   0% /sys/fs/cgroup
+/dev/nvme0n1p1              511M   77M  435M  15% /boot/firmware
+tython.local:/teamssd/tgz1  4.3T  778G  3.6T  18% /mnt/nfs
+tmpfs                       796M   56K  796M   1% /run/user/1000
+"
+2025-06-08 10:51:16,rpi58g.local,zpool status|grep errors,
+2025-06-08 10:51:16,rpi58g.local,uptime," 10:51:45 up  7:51,  1 user,  load average: 0.06, 0.07, 0.07
+"
+2025-06-08 10:51:16,rpi58g.local,date,"Sun Jun  8 10:51:45 AM CDT 2025
+"
+2025-06-08 10:51:16,rpi58g.local,ntpq -pn | grep '*',"*193.29.63.226   204.9.54.119     2 u  997 1024  377  27.4108  -0.6318   1.3802
+"
+2025-06-08 10:51:16,rpi58g.local,pwd,"/home/blane
+"
+2025-06-08 10:51:16,zero.local,hostname,"zero.local
+"
+2025-06-08 10:51:16,zero.local,df -h,"Filesystem                  Size  Used Avail Use% Mounted on
+udev                         82M     0   82M   0% /dev
+tmpfs                        43M  988K   42M   3% /run
+/dev/mmcblk0p2              117G  5.0G  106G   5% /
+tmpfs                       213M     0  213M   0% /dev/shm
+tmpfs                       5.0M  8.0K  5.0M   1% /run/lock
+/dev/mmcblk0p1              510M   79M  432M  16% /boot/firmware
+tython.local:/teamssd/tgz1  4.3T  778G  3.6T  18% /mnt/tgz
+tmpfs                        43M     0   43M   0% /run/user/1000
+"
+2025-06-08 10:51:16,zero.local,zpool status|grep errors,
+2025-06-08 10:51:16,zero.local,uptime," 10:51:52 up 16:46,  0 user,  load average: 0.09, 0.06, 0.01
+"
+2025-06-08 10:51:16,zero.local,date,"Sun  8 Jun 10:51:52 CDT 2025
+"
+2025-06-08 10:51:16,zero.local,ntpq -pn | grep '*',
+2025-06-08 10:51:16,zero.local,pwd,"/home/blane
+"
+Timestamp,Hostname,Command,Output
+2025-06-08 10:53:37,tython.local,hostname,"tython
+"
+2025-06-08 10:53:37,tython.local,df -h,"Filesystem           Size  Used Avail Use% Mounted on
+udev                  32G     0   32G   0% /dev
+tmpfs                6.3G  3.8M  6.3G   1% /run
+/dev/mapper/vg-root   47G  9.7G   36G  22% /
+tmpfs                 32G   84K   32G   1% /dev/shm
+tmpfs                5.0M     0  5.0M   0% /run/lock
+/dev/mapper/vg-boot  952M  143M  705M  17% /boot
+/dev/mapper/vg-tmp    47G  5.8M   47G   1% /tmp
+/dev/mapper/vg-var    94G   30G   63G  33% /var
+/dev/mapper/vg-home  729G   76G  652G  11% /home
+/dev/nvme0n1p1       952M  5.9M  946M   1% /boot/efi
+teamssd/tgz1         4.3T  778G  3.6T  18% /teamssd/tgz1
+teamssd/media        6.6T  3.1T  3.6T  46% /teamssd/media
+tweak                1.8T   24K  1.8T   1% /tweak
+tweak/dev            1.7T  7.7G  1.7T   1% /tweak/dev
+tmpfs                6.3G   44K  6.3G   1% /run/user/1000
+"
+2025-06-08 10:53:37,tython.local,zpool status|grep errors,"  scan: scrub repaired 0B in 10:03:20 with 0 errors on Sun Jun  8 10:27:21 2025
+errors: No known data errors
+  scan: scrub repaired 0B in 00:00:24 with 0 errors on Sun Jun  8 00:24:34 2025
+errors: No known data errors
+"
+2025-06-08 10:53:37,tython.local,uptime," 10:53:45 up 1 day,  1:06,  0 user,  load average: 0.24, 0.27, 0.66
+"
+2025-06-08 10:53:37,tython.local,date,"Sun Jun  8 10:53:46 AM CDT 2025
+"
+2025-06-08 10:53:37,tython.local,ntpq -pn | grep '*',"*141.11.89.193   173.71.68.71     2 u 1020 1024  377  31.5050  -2.4220   0.2893
+"
+2025-06-08 10:53:37,tython.local,pwd,"/home/blane
+"
+2025-06-08 10:53:37,pihole.local,hostname,"pihole
+"
+2025-06-08 10:53:37,pihole.local,df -h,"Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G   15G   14G  52% /
+devtmpfs        1.6G     0  1.6G   0% /dev
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           750M  1.3M  749M   1% /run
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+/dev/mmcblk0p1  255M   51M  205M  20% /boot
+tmpfs           375M   24K  375M   1% /run/user/1000
+"
+2025-06-08 10:53:37,pihole.local,zpool status|grep errors,
+2025-06-08 10:53:37,pihole.local,uptime," 10:53:52 up  7:53,  1 user,  load average: 0.13, 0.13, 0.05
+"
+2025-06-08 10:53:37,pihole.local,date,"Sun 08 Jun 2025 10:53:53 AM CDT
+"
+2025-06-08 10:53:37,pihole.local,ntpq -pn | grep '*',"*193.29.63.226   204.9.54.119     2 u  789 1024  377   26.610   -1.759   1.465
+"
+2025-06-08 10:53:37,pihole.local,pwd,"/home/blane
+"
+2025-06-08 10:53:37,fedora.local,hostname,"fedora
+"
+2025-06-08 10:53:37,fedora.local,df -h,"Filesystem                  Size  Used Avail Use% Mounted on
+/dev/mapper/vg-root          14G  9.7G  4.4G  69% /
+devtmpfs                    4.0M     0  4.0M   0% /dev
+tmpfs                       7.9G  168K  7.9G   1% /dev/shm
+tmpfs                       3.2G  1.4M  3.2G   1% /run
+/dev/sda1                   975M  314M  611M  34% /boot
+/dev/sda2                   2.0G  365M  1.5G  20% /opt
+/dev/mapper/vg-var          9.8G  6.5G  2.9G  70% /var
+/dev/mapper/vg-home          44G  2.1G   40G   5% /home
+/dev/mapper/vg-tmp           22G  184K   21G   1% /tmp
+endor.local:/mnt/user/plex  7.4T  3.0T  4.4T  41% /mnt/share
+tmpfs                       1.6G  132K  1.6G   1% /run/user/1001
+"
+2025-06-08 10:53:37,fedora.local,zpool status|grep errors,
+2025-06-08 10:53:37,fedora.local,uptime," 10:54:00 up 15 days, 40 min,  3 users,  load average: 0.00, 0.00, 0.00
+"
+2025-06-08 10:53:37,fedora.local,date,"Sun Jun  8 10:54:00 AM CDT 2025
+"
+2025-06-08 10:53:37,fedora.local,ntpq -pn | grep '*',"*141.11.228.173  173.71.68.71     2 u  918 1024  377  32.1286   0.0554   1.0138
+"
+2025-06-08 10:53:37,fedora.local,pwd,"/home/blane
+"
+2025-06-08 10:53:37,rpi58g.local,hostname,"rpi58g
+"
+2025-06-08 10:53:37,rpi58g.local,df -h,"Filesystem                  Size  Used Avail Use% Mounted on
+udev                        3.9G     0  3.9G   0% /dev
+tmpfs                       796M  2.0M  794M   1% /run
+/dev/nvme0n1p2              938G   29G  862G   4% /
+tmpfs                       3.9G  276K  3.9G   1% /dev/shm
+tmpfs                       5.0M   12K  5.0M   1% /run/lock
+tmpfs                       4.0M     0  4.0M   0% /sys/fs/cgroup
+/dev/nvme0n1p1              511M   77M  435M  15% /boot/firmware
+tython.local:/teamssd/tgz1  4.3T  778G  3.6T  18% /mnt/nfs
+tmpfs                       796M   56K  796M   1% /run/user/1000
+"
+2025-06-08 10:53:37,rpi58g.local,zpool status|grep errors,
+2025-06-08 10:53:37,rpi58g.local,uptime," 10:54:07 up  7:53,  1 user,  load average: 0.21, 0.11, 0.08
+"
+2025-06-08 10:53:37,rpi58g.local,date,"Sun Jun  8 10:54:07 AM CDT 2025
+"
+2025-06-08 10:53:37,rpi58g.local,ntpq -pn | grep '*',"*193.29.63.226   204.9.54.119     2 u   68 1024  377  26.9079  -0.6365   1.2237
+"
+2025-06-08 10:53:37,rpi58g.local,pwd,"/home/blane
+"
+2025-06-08 10:53:37,zero.local,hostname,"zero.local
+"
+2025-06-08 10:53:37,zero.local,df -h,"Filesystem                  Size  Used Avail Use% Mounted on
+udev                         82M     0   82M   0% /dev
+tmpfs                        43M  988K   42M   3% /run
+/dev/mmcblk0p2              117G  5.0G  106G   5% /
+tmpfs                       213M     0  213M   0% /dev/shm
+tmpfs                       5.0M  8.0K  5.0M   1% /run/lock
+/dev/mmcblk0p1              510M   79M  432M  16% /boot/firmware
+tython.local:/teamssd/tgz1  4.3T  778G  3.6T  18% /mnt/tgz
+tmpfs                        43M     0   43M   0% /run/user/1000
+"
+2025-06-08 10:53:37,zero.local,zpool status|grep errors,
+2025-06-08 10:53:37,zero.local,uptime," 10:54:14 up 16:48,  0 user,  load average: 0.09, 0.05, 0.01
+"
+2025-06-08 10:53:37,zero.local,date,"Sun  8 Jun 10:54:14 CDT 2025
+"
+2025-06-08 10:53:37,zero.local,ntpq -pn | grep '*',
+2025-06-08 10:53:37,zero.local,pwd,"/home/blane
+"

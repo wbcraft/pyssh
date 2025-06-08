@@ -1,0 +1,5 @@
+tython.local
+pihole.local
+fedora.local
+rpi58g.local
+zero.local
