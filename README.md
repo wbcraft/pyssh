@@ -20,15 +20,15 @@ Also tested on Debian 11 and it seems to work fine.
 
 
 
-### Installation:
+### Installation Example:
 
 1) Create a python venv.
    
-   a) mkdir python && cd python
+   a) mkdir python_ssh
 
-   b) python -m venv ssh
+   b) python -m venv ~/python_ssh
 
-   c) cd ssh
+   c) cd python_ssh
 
 3) Activate the venv.
 
