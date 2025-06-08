@@ -1,5 +1,5 @@
 # Here we import paramiko, point to the private key, and print when connection is made.
-
+# Modify the 3rd line with the path to your private key.
 import paramiko
 def ssh_connect(hostname, username, port=22):
     private_key_path = "/path/to/your/private/key"
@@ -20,6 +20,9 @@ def ssh_connect(hostname, username, port=22):
 #        "ntpq -pn | grep '*'",
 #        "pwd",
 #        "python/disk_check.sh"   # This command checks for a script on the hostname you're connecting TO and runs it.
+        "sudo apt-get update",
+        "sudo apt-get upgrade -y",
+        "sudo reboot"
     ]
   
 #### How it parses/prints the commands.
@@ -36,7 +39,7 @@ def ssh_connect(hostname, username, port=22):
     client.close()
     print('connection closed')
 
-#### ADD YOUR HOSTNAME AND USERNAME HERE ####
+#### ADD YOUR HOSTS FILE AND USERNAME HERE ####
 
 if __name__ =="__main__":
     username = "YOURUSERNAME"
