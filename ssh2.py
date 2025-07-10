@@ -2,7 +2,7 @@
 import paramiko
 
 def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target_hostname, target_username, target_port=22):
-    private_key_path = "/your/id_rsa"
+    private_key_path = "/your/id_rsa"  #edit this line
 
     # Connect to the bastion host
     bastion_client = paramiko.SSHClient()
@@ -21,7 +21,7 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
     target_client.connect(target_hostname, username=target_username, pkey=target_private_key, sock=channel)
 
     print(f'Connected to {target_hostname} via bastion host')
-
+#### PUT YOUR COMMANDS HERE ####
     commands = [
         #"hostname",
         #"df -h",
@@ -32,7 +32,7 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
         #"pwd",
         #"python/disk_check.sh"
     ]
-
+#### Lets's add output and logging ####
     for command in commands:
         stdin, stdout, stderr = target_client.exec_command(command)
         output = stdout.read().decode()
@@ -48,8 +48,8 @@ def ssh_connect_via_bastion(bastion_host, bastion_username, bastion_port, target
     bastion_client.close()
 
 if __name__ == "__main__":
-    hostfile_path = "/your/hosts.txt"
-    username = "username"
+    hostfile_path = "/your/hosts.txt"  # path to your hosts.txt file, or whatever you call it.
+    username = "username"    # your username
     bastion_host = "bastion_host_name"  # Replace with your bastion host
     bastion_username = "username_again"     # Replace with your bastion user
     bastion_port = 22                       # Replace with your bastion port
