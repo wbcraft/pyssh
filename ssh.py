@@ -2,7 +2,7 @@
 # Modify the 3rd line with the path to your private key.
 import paramiko
 def ssh_connect(hostname, username, port=22):
-    private_key_path = "/path/to/your/private/key"
+    private_key_path = "/path/to/your/private/key"  #edit this line
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     private_key = paramiko.RSAKey.from_private_key_file(private_key_path)
@@ -12,7 +12,7 @@ def ssh_connect(hostname, username, port=22):
 #### Commands go here.
   
     commands = [
-#### THESE ARE EXAMPLE COMMANDS ####
+#### THESE ARE EXAMPLE COMMANDS.  put your own stuff here. ####
 #        "df -h",
 #        "zpool status|grep errors",
 #        "uptime",
@@ -25,7 +25,7 @@ def ssh_connect(hostname, username, port=22):
         "sudo reboot"
     ]
   
-#### How it parses/prints the commands.
+#### How it parses/prints the commands/errors.
   
     for command in commands:
         stdin, stdout, stderr = client.exec_command(command)
